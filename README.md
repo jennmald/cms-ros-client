@@ -32,8 +32,9 @@ ros2 action send_goal /beambot_execution beambot_interfaces/action/MTCExecution 
 # Conda/pixi setup
 
 ```bash
-pixi run ros2 topic list
-pixi run ros2 node list
+pixi shell -e ros2
+pixi run topic-list
+pixi run node-list
 ```
 
 # Build beambot_interfaces (pixi)
